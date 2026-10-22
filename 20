@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a[5];
+    for(int i=0;i<5;i++) cin >> a[i];
+
+    int l=0, h=4, mid, largest=a[0];
+    while(l<=h) {
+        mid=(l+h)/2;
+        largest=a[mid];
+        l=mid+1;
+    }
+
+    cout << "Largest = " << largest;
+    return 0;
+}
